@@ -10,7 +10,7 @@ library(purrr)
 library(dplyr)
 
 # Set the working directory to the main folder - directory will change for twitter data
-setwd("C:/Users/adaly/OneDrive/Desktop/Data Wrangling/Fanatics Sentiment Analysis")
+setwd("C:/Users/X") # Fill with your working directory
 
 ## Trust Pilot
 
@@ -68,7 +68,7 @@ website_reviews$Engagement <- rep(NA, nrow(website_reviews))
 ## Twitter
 
 # Set the working directory to the folder containing the CSV files
-setwd("C:/Users/adaly/OneDrive/Desktop/Data Wrangling/Fanatics Sentiment Analysis/twitter csv")
+setwd("C:/Users/X")
 
 # Create an empty list to store data frames
 twitter_data <- list()
@@ -137,7 +137,7 @@ all_source <- rbind(website_reviews, twitter)
 
 
 # Set wd back to main folder to save all_source
-setwd("C:/Users/adaly/OneDrive/Desktop/Data Wrangling/Fanatics Sentiment Analysis")
+setwd("C:/Users/X")
 
 # Save final cleaned and integrated data frame
 write.csv(all_source, "all_source.csv", row.names = FALSE)
